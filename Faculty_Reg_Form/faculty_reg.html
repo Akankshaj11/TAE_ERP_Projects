@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <form action="#">
+    <h2>Registration of Faculty</h2>
+    <div class="reg_form">
+    <div class="input_field">
+
+        <div class="f_row">
+
+            <div class="f_name">
+            <label for="f_row">First Name:</label>
+            <input type="text" id="input_name">
+            </div>
+    
+            <div class="m_name">
+            <label for="f_row">Middle Name:</label>
+            <input type="text" id="input_name">
+            </div>
+    
+            <div class="l_name">
+            <label for="f_row">Last Name:</label>
+            <input type="text" id="input_name">
+            </div>
+
+        </div><br><br>
+
+         <!--second row-->
+         <div class="s_row">
+
+            <div class="Contact">
+            <label for="s_row">Contact:</label>
+            <input type="tel" id="input_phone">
+            </div>
+    
+            <div class="alt_contact">
+            <label for="s_row">Alternate Contact Number:</label>
+            <input type="tel" id="input_phone">
+            </div>
+    
+            <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" id="input_email">
+            </div>
+         </div><br><br>
+
+         <!--third row-->
+         
+         <div class="t_row">
+
+            <div class="status">
+                <label for="status">Status:</label><br>
+                <select name="status" id="status_field">
+                    <option value="" selected disabled>Select Status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select>
+            </div>
+
+            <div class="qualification">
+                <label for="qualification">Qualification:</label><br>
+                <input type="text">
+            </div>
+
+            <div class="stream">
+                <label for="stream">Stream:</label><br>
+                <select name="stream" id="Stream">
+                    <option value="" selected disabled>Select Stream</option>
+                    <option value="cs">CS</option>
+                    <option value="it">IT</option>
+                    <option value="entc">ENTC</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="civil">Civil</option>
+                </select>
+            </div>
+        </div><br><br>
+
+            <!--fourth row-->
+
+            <div class="fo_row">
+               <div class="score_doc">
+                <div class="tenth_score">
+                    <label for="tenth_score">10th Score:</label>
+                </div>
+
+                <div class="fo_input_fields">
+                    <input type="text" class="tenth_score_field">
+                    <input type="file">
+                 </div>
+                </div>
+                
+                 
+                    <div class="score_doc">
+                     <div class="twelveth_score">
+                         <label for="twelveth_score">12th Score:</label>
+                     </div>
+     
+                     <div class="fo_input_fields">
+                         <input type="text" class="twelveth_score_field">
+                         <input type="file">
+                      </div>
+                     </div>
+        
+                <div class="degree_doc">
+                    <div class="degree_details_docs">
+                        <label for="degree_label">Degree:</label>
+                    </div>
+    
+                    <div class="fo_input_fields">
+                        <input type="text" class="degree_field">
+                        <input type="file">
+                     </div>
+                    </div>
+             </div><br><br> 
+
+             <!-- fifth row -->
+
+             <div class="fi_row">
+
+                <div class="address_area">
+                    <label for="address">Address:</label><br>
+                    <textarea name="address" id="address_area_field" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="dept">
+                    <label for="department">Assigned Department:</label><br>
+                    <select name="dept" id="dept_drop_down">
+                        <option value="" selected disabled>Select Department</option>
+                        <option value="cs">CS</option>
+                        <option value="it">IT</option>
+                        <option value="entc">ENTC</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="civil">Civil</option>
+                    </select>
+                </div>
+
+                <div class="employ_type">
+                    <label for="emp_type">Employment Type:</label><br>
+                    <select name="employment" id="empl">
+                        <option value="" selected disabled>Select Employment Type</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="hod">HOD</option>
+                        <option value="principal">Principal</option>
+                    </select>
+                </div>
+             </div>
+             
+             <div class="submit_button">
+                <input type="button" value="Submit" id="Submit_btn">
+             </div>
+
+    </div>
+</div>
+</form>
+    
+</body>
+</html>
