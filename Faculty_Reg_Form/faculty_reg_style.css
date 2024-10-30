@@ -1,0 +1,183 @@
+body{
+    font-family: "poppins", sans-serif;
+}
+
+h2{
+    padding-left: 70px;
+    font-size: 30px;
+    color: #007bff;
+    padding-bottom: 0px;
+}
+
+
+/* first row */
+.f_row{
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 60px;
+}
+
+.f_name{
+    padding-left: 10px;
+}
+
+.m_name{
+    padding-left: 17px;
+}
+
+.l_name{
+    padding-right: 15px;
+}
+input{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    width: 25rem;
+    height: 40px;
+}
+
+
+/* second row */
+
+.s_row{
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 70px;
+}
+
+.alt_contact{
+    padding-left: 76px;
+}
+
+.email{
+    padding-right: 75px;
+}
+
+/* third row */
+
+.t_row{
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 70px;
+}
+
+.qualification{
+    padding-left: 76px;
+}
+
+.stream{
+    padding-left: 75px;
+    
+}
+
+#Stream{
+    width: 25.5rem;
+    height: 48px;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+}
+
+#status_field{
+    width: 25.5rem;
+    height: 47px;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+}
+
+/* fourth row */
+
+.fo_row{
+    display: inline-flex;
+    flex-direction: row; 
+    padding-left: 70px;
+}
+
+
+.tenth_score_field{
+    margin-bottom: 10px; 
+    /* padding-left: 70px; */
+} 
+
+.twelveth_score_field{
+    margin-bottom: 10px;
+} 
+
+.degree_field{
+    margin-bottom: 10px;
+} 
+
+
+/* fifth row */
+
+.fi_row{
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.address_area{
+    padding-left: 70px;
+}
+
+#address_area_field{
+    max-width: 25rem;
+    min-width: 25rem;
+    max-height: 50px;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+}
+
+.dept{
+    padding-left: 76px;
+}
+ 
+
+#dept_drop_down{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    width: 25.2rem;
+    height: 49px;
+} 
+
+.employ_type{
+    padding-left: 80px;
+}
+
+#empl{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    width: 25.5rem;
+    height: 47px;
+}
+
+/* submit button */
+
+#Submit_btn{
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    width: 7.5rem;
+    height: 3.2rem;
+    border-radius: 6px;
+    border: none;
+
+}
+
+#Submit_btn:hover{
+    background-color: #0655af;
+    transition: 0.5s;
+}
+
+.submit_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
