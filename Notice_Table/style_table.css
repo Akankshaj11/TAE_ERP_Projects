@@ -1,0 +1,138 @@
+body {
+    font-family: 'mulish', sans-serif;
+    margin: 20px;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color:#1AA7EC ;
+    border: none;
+    color: white;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+td {
+    border-bottom: 2px solid rgb(219, 218, 217);
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:last-child td{
+    border-bottom: 4px solid #3979bc; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(237, 235, 234);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(251, 250, 249);
+}
+
+.toggle-button {
+        position: fixed;
+        bottom: 60px; 
+        left: 30px; 
+        width: 70px; 
+        height: 65px; 
+        background-color: #3979bc; 
+        border: none;
+        border-radius: 60px; 
+        cursor: pointer;
+        box-shadow: 1px 1px 1px #3979bc; 
+        transition: transform 0.3s; 
+        display: flex;
+        padding-bottom: 7px;
+        padding-left: 1px;
+        align-items:center;
+        justify-content: center;
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+}
+
+.hidden{
+    position: fixed;
+    top: 10px;
+    left: 30px; 
+    width: 25%;
+    height: 72%;
+    background-color: #f8f9fa;
+    border-right: 2px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: left 0.3s; 
+    display: flex;
+    flex-direction: column;
+    z-index: 10; 
+}
+
+#toggleForm {
+    display: none;
+}
+
+#addForm {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#toggleForm:checked + label + #addForm {
+    box-shadow: 2px 2px 4px rgb(151, 150, 150);
+    border-style: hidden;
+    color: #1AA7EC;
+    display: block;
+}
+
+.toggle-form-checkbox:checked ~ .toggle-button {
+    transform: rotate(45deg); 
+}
+
+
+#addForm h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin: 2px 0 3px;
+}
+
+form input, form select, form button {
+    color: black;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form button{
+    color: white;
+    font-size: 15px;
+    background-color: #1AA7EC;
+    border: none;
+}
+
+form button:hover{
+    background-color: #1d94d0;
+}
+
+form .date-time-section {
+    display: block;
+    
+}
+
+
