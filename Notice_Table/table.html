@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Table</title>
+    <link rel="stylesheet" href="style_table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Professor</th>
+                <th>Department</th>
+                <th>Date & Time</th>
+                <th>Notice</th>
+                <th>Read</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Prof.R.B.Lagdive</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-15 10:00<br>Valid until: 2024-07-16</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Prof.Nilufer Zaman</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-16 11:00<br>Valid until: 2024-07-17</td>
+                <td>Submit assignments</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Prof.Susha Adagale</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Prof.Shikha Sharma</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 1:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Prof.Abhijit Cholke</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Prof.B.R.Devhare</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Prof.Abhijit Cholke</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Prof.Abhijit Cholke</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Prof.Abhijit Cholke</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Prof.Abhijit Cholke</td>
+                <td>Comp</td>
+                <td>Published on: 2024-07-18 12:00<br>Valid until: 2024-07-20</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <input type="checkbox" id="toggleForm" class="toggle-form-checkbox">
+    <label for="toggleForm" id="addBtn" class="toggle-button">+</label>
+
+    
+    <div id="addForm" class="hidden">
+        <h2>Add New Notice</h2>
+        <form id="newNoticeForm" method="POST" action="javascript:void(0)">
+            <label for="professor">Professor:</label>
+            <input type="text" id="professor" name="professor" required>
+
+            <label for="title">Notice Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+
+                <option value="Comp">Comp</option>
+                <option value="IT">IT</option>
+                <option value="ENTC">ENTC</option>
+                <option value="MECH">MECH</option>
+            </select>
+
+            <div class="date-time-section">
+                <div>
+                    <label for="datetime">Date & Time:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" required>
+                </div>
+                <div>
+                    <label for="validUntil">Valid Until:</label>
+                    <input type="date" id="validUntil" name="validUntil" required>
+                </div>
+            </div>
+
+            <label for="image">Choose an image to upload:</label>
+            <input type="file" id="image" name="image">
+
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+</body>
+</html>
